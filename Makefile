@@ -12,7 +12,7 @@ VECTORS := tests/solutions.txt
 INVALID_STATES := 1234567111111 123456711111111 02345671111111 82345671111111 \
 	12345671111110 12345671111114 1234567111111a 11345671111111 12345671111112
 
-.PHONY: all check prove clean indent
+.PHONY: all check prove clean indent check-ida
 
 all: solver mini
 
@@ -21,6 +21,12 @@ solver: solver.c
 
 mini: mini.c
 	$(CC) $(CFLAGS) $< -o $@
+
+solver_ida: solver_ida.c
+	$(CC) $(CFLAGS) $< -o $@
+
+check-ida: solver_ida
+	./solver_ida --self-test
 
 check: solver mini $(VECTORS)
 	./solver --self-test
@@ -94,4 +100,4 @@ endif
 	$(CLANG_FORMAT) -i $(C_SOURCES)
 
 clean:
-	$(RM) solver mini
+	$(RM) solver mini solver_ida
