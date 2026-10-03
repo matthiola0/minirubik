@@ -5,3 +5,4 @@ solver
 mini
 solver_ida
 *.exe
+bench/ida_bench

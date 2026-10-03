@@ -1,0 +1,169 @@
+All 21 pairs and 35 triples; depth 11; each run checks H1 on every state and verifies every depth-11 path.
+subset {12}: 30618 of 30618 (orientation, position) pairs reached, max distance 8
+variant        target_bytes target_bytes4   states    max_exp    max_cand     mean_cand  worst_state     seconds
+os{12}                70398         52569     2644      38008      228030       45626.0  54721631111111     0.71
+subset {13}: 30618 of 30618 (orientation, position) pairs reached, max distance 8
+variant        target_bytes target_bytes4   states    max_exp    max_cand     mean_cand  worst_state     seconds
+os{13}                70398         52569     2644      38983      233883       45844.3  14325671111111     0.73
+subset {14}: 30618 of 30618 (orientation, position) pairs reached, max distance 8
+variant        target_bytes target_bytes4   states    max_exp    max_cand     mean_cand  worst_state     seconds
+os{14}                70398         52569     2644      37675      226032       42405.1  54721631111111     0.67
+subset {15}: 30618 of 30618 (orientation, position) pairs reached, max distance 8
+variant        target_bytes target_bytes4   states    max_exp    max_cand     mean_cand  worst_state     seconds
+os{15}                70398         52569     2644      41954      251709       50010.4  14325671111111     0.79
+subset {16}: 30618 of 30618 (orientation, position) pairs reached, max distance 8
+variant        target_bytes target_bytes4   states    max_exp    max_cand     mean_cand  worst_state     seconds
+os{16}                70398         52569     2644      41601      249591       50027.7  14325671111111     0.77
+subset {17}: 30618 of 30618 (orientation, position) pairs reached, max distance 8
+variant        target_bytes target_bytes4   states    max_exp    max_cand     mean_cand  worst_state     seconds
+os{17}                70398         52569     2644      37668      225993       42515.0  14325671111111     0.66
+subset {23}: 30618 of 30618 (orientation, position) pairs reached, max distance 8
+variant        target_bytes target_bytes4   states    max_exp    max_cand     mean_cand  worst_state     seconds
+os{23}                70398         52569     2644      37873      227223       45762.3  14325671111111     0.70
+subset {24}: 30618 of 30618 (orientation, position) pairs reached, max distance 8
+variant        target_bytes target_bytes4   states    max_exp    max_cand     mean_cand  worst_state     seconds
+os{24}                70398         52569     2644      41017      246087       50353.9  14325671111111     0.78
+subset {25}: 30618 of 30618 (orientation, position) pairs reached, max distance 8
+variant        target_bytes target_bytes4   states    max_exp    max_cand     mean_cand  worst_state     seconds
+os{25}                70398         52569     2644      42512      255054       49714.7  54721631111111     0.76
+subset {26}: 30618 of 30618 (orientation, position) pairs reached, max distance 8
+variant        target_bytes target_bytes4   states    max_exp    max_cand     mean_cand  worst_state     seconds
+os{26}                70398         52569     2644      41196      247158       50382.5  54721631111111     0.81
+subset {27}: 30618 of 30618 (orientation, position) pairs reached, max distance 8
+variant        target_bytes target_bytes4   states    max_exp    max_cand     mean_cand  worst_state     seconds
+os{27}                70398         52569     2644      42037      252207       49988.7  14325671111111     0.77
+subset {34}: 30618 of 30618 (orientation, position) pairs reached, max distance 8
+variant        target_bytes target_bytes4   states    max_exp    max_cand     mean_cand  worst_state     seconds
+os{34}                70398         52569     2644      41149      246879       52141.2  14325671111111     0.82
+subset {35}: 30618 of 30618 (orientation, position) pairs reached, max distance 8
+variant        target_bytes target_bytes4   states    max_exp    max_cand     mean_cand  worst_state     seconds
+os{35}                70398         52569     2644      40575      243435       52179.2  14325671111111     0.80
+subset {36}: 30618 of 30618 (orientation, position) pairs reached, max distance 8
+variant        target_bytes target_bytes4   states    max_exp    max_cand     mean_cand  worst_state     seconds
+os{36}                70398         52569     2644      41115      246675       45765.0  14325671111111     0.70
+subset {37}: 30618 of 30618 (orientation, position) pairs reached, max distance 8
+variant        target_bytes target_bytes4   states    max_exp    max_cand     mean_cand  worst_state     seconds
+os{37}                70398         52569     2644      41827      250947       45860.1  14325671111111     0.71
+subset {45}: 30618 of 30618 (orientation, position) pairs reached, max distance 8
+variant        target_bytes target_bytes4   states    max_exp    max_cand     mean_cand  worst_state     seconds
+os{45}                70398         52569     2644      41177      247044       51707.6  54721631111111     0.80
+subset {46}: 30618 of 30618 (orientation, position) pairs reached, max distance 8
+variant        target_bytes target_bytes4   states    max_exp    max_cand     mean_cand  worst_state     seconds
+os{46}                70398         52569     2644      40896      245358       50393.8  54721631111111     0.78
+subset {47}: 30618 of 30618 (orientation, position) pairs reached, max distance 8
+variant        target_bytes target_bytes4   states    max_exp    max_cand     mean_cand  worst_state     seconds
+os{47}                70398         52569     2644      37492      224937       42419.3  14325671111111     0.66
+subset {56}: 30618 of 30618 (orientation, position) pairs reached, max distance 8
+variant        target_bytes target_bytes4   states    max_exp    max_cand     mean_cand  worst_state     seconds
+os{56}                70398         52569     2644      41153      246903       49770.6  14325671111111     0.82
+subset {57}: 30618 of 30618 (orientation, position) pairs reached, max distance 8
+variant        target_bytes target_bytes4   states    max_exp    max_cand     mean_cand  worst_state     seconds
+os{57}                70398         52569     2644      42926      257541       49964.3  14325671111111     0.81
+subset {67}: 30618 of 30618 (orientation, position) pairs reached, max distance 8
+variant        target_bytes target_bytes4   states    max_exp    max_cand     mean_cand  worst_state     seconds
+os{67}                70398         52569     2644      41096      246561       45641.5  14325671111111     0.79
+subset {123}: 153090 of 153090 (orientation, position) pairs reached, max distance 9
+variant        target_bytes target_bytes4   states    max_exp    max_cand     mean_cand  worst_state     seconds
+os{123}              193374        114309     2644      19065      114378       14611.0  12347651111111     0.27
+subset {124}: 153090 of 153090 (orientation, position) pairs reached, max distance 9
+variant        target_bytes target_bytes4   states    max_exp    max_cand     mean_cand  worst_state     seconds
+os{124}              193374        114309     2644      28216      169278       18759.4  54721631111111     0.30
+subset {125}: 153090 of 153090 (orientation, position) pairs reached, max distance 9
+variant        target_bytes target_bytes4   states    max_exp    max_cand     mean_cand  worst_state     seconds
+os{125}              193374        114309     2644      28588      171510       17649.5  54721631111111     0.30
+subset {126}: 153090 of 153090 (orientation, position) pairs reached, max distance 9
+variant        target_bytes target_bytes4   states    max_exp    max_cand     mean_cand  worst_state     seconds
+os{126}              193374        114309     2644      28240      169422       18992.5  54721631111111     0.32
+subset {127}: 153090 of 153090 (orientation, position) pairs reached, max distance 9
+variant        target_bytes target_bytes4   states    max_exp    max_cand     mean_cand  worst_state     seconds
+os{127}              193374        114309     2644      18273      109629       18590.6  41532672313211     0.31
+subset {134}: 153090 of 153090 (orientation, position) pairs reached, max distance 9
+variant        target_bytes target_bytes4   states    max_exp    max_cand     mean_cand  worst_state     seconds
+os{134}              193374        114309     2644      20086      120504       18609.1  16345271111111     0.30
+subset {135}: 153090 of 153090 (orientation, position) pairs reached, max distance 9
+variant        target_bytes target_bytes4   states    max_exp    max_cand     mean_cand  worst_state     seconds
+os{135}              193374        114309     2644      28474      170829       19068.9  14325671111111     0.30
+subset {136}: 153090 of 153090 (orientation, position) pairs reached, max distance 9
+variant        target_bytes target_bytes4   states    max_exp    max_cand     mean_cand  worst_state     seconds
+os{136}              193374        114309     2644      28705      172215       17745.2  14325671111111     0.29
+subset {137}: 153090 of 153090 (orientation, position) pairs reached, max distance 9
+variant        target_bytes target_bytes4   states    max_exp    max_cand     mean_cand  worst_state     seconds
+os{137}              193374        114309     2644      28492      170937       18841.3  14325671111111     0.30
+subset {145}: 153090 of 153090 (orientation, position) pairs reached, max distance 9
+variant        target_bytes target_bytes4   states    max_exp    max_cand     mean_cand  worst_state     seconds
+os{145}              193374        114309     2644      28712      172254       18642.2  54721631111111     0.32
+subset {146}: 153090 of 153090 (orientation, position) pairs reached, max distance 9
+variant        target_bytes target_bytes4   states    max_exp    max_cand     mean_cand  worst_state     seconds
+os{146}              193374        114309     2644      27699      166176       18784.5  54721631111111     0.30
+subset {147}: 153090 of 153090 (orientation, position) pairs reached, max distance 9
+variant        target_bytes target_bytes4   states    max_exp    max_cand     mean_cand  worst_state     seconds
+os{147}              193374        114309     2644      25706      154230       12022.8  41625372313211     0.20
+subset {156}: 153090 of 153090 (orientation, position) pairs reached, max distance 9
+variant        target_bytes target_bytes4   states    max_exp    max_cand     mean_cand  worst_state     seconds
+os{156}              193374        114309     2644      33123      198723       15554.1  14325671111111     0.24
+subset {157}: 153090 of 153090 (orientation, position) pairs reached, max distance 9
+variant        target_bytes target_bytes4   states    max_exp    max_cand     mean_cand  worst_state     seconds
+os{157}              193374        114309     2644      27966      167781       18817.1  14325671111111     0.30
+subset {167}: 153090 of 153090 (orientation, position) pairs reached, max distance 9
+variant        target_bytes target_bytes4   states    max_exp    max_cand     mean_cand  worst_state     seconds
+os{167}              193374        114309     2644      28506      171021       18675.5  14325671111111     0.30
+subset {234}: 153090 of 153090 (orientation, position) pairs reached, max distance 9
+variant        target_bytes target_bytes4   states    max_exp    max_cand     mean_cand  worst_state     seconds
+os{234}              193374        114309     2644      28203      169203       19022.6  14325671111111     0.30
+subset {235}: 153090 of 153090 (orientation, position) pairs reached, max distance 9
+variant        target_bytes target_bytes4   states    max_exp    max_cand     mean_cand  worst_state     seconds
+os{235}              193374        114309     2644      18347      110070       18570.1  47352612313211     0.33
+subset {236}: 153090 of 153090 (orientation, position) pairs reached, max distance 9
+variant        target_bytes target_bytes4   states    max_exp    max_cand     mean_cand  worst_state     seconds
+os{236}              193374        114309     2644      28036      168201       18782.0  14325671111111     0.31
+subset {237}: 153090 of 153090 (orientation, position) pairs reached, max distance 9
+variant        target_bytes target_bytes4   states    max_exp    max_cand     mean_cand  worst_state     seconds
+os{237}              193374        114309     2644      28442      170637       17740.4  14325671111111     0.28
+subset {245}: 153090 of 153090 (orientation, position) pairs reached, max distance 9
+variant        target_bytes target_bytes4   states    max_exp    max_cand     mean_cand  worst_state     seconds
+os{245}              193374        114309     2644      28105      168612       18923.6  54721631111111     0.30
+subset {246}: 153090 of 153090 (orientation, position) pairs reached, max distance 9
+variant        target_bytes target_bytes4   states    max_exp    max_cand     mean_cand  worst_state     seconds
+os{246}              193374        114309     2644      32474      194826       15736.1  54721631111111     0.25
+subset {247}: 153090 of 153090 (orientation, position) pairs reached, max distance 9
+variant        target_bytes target_bytes4   states    max_exp    max_cand     mean_cand  worst_state     seconds
+os{247}              193374        114309     2644      27536      165201       18771.3  14325671111111     0.29
+subset {256}: 153090 of 153090 (orientation, position) pairs reached, max distance 9
+variant        target_bytes target_bytes4   states    max_exp    max_cand     mean_cand  worst_state     seconds
+os{256}              193374        114309     2644      27830      166962       18722.4  54721631111111     0.30
+subset {257}: 153090 of 153090 (orientation, position) pairs reached, max distance 9
+variant        target_bytes target_bytes4   states    max_exp    max_cand     mean_cand  worst_state     seconds
+os{257}              193374        114309     2644      20625      123738       15370.5  32145671111111     0.26
+subset {267}: 153090 of 153090 (orientation, position) pairs reached, max distance 9
+variant        target_bytes target_bytes4   states    max_exp    max_cand     mean_cand  worst_state     seconds
+os{267}              193374        114309     2644      27797      166767       19012.1  14325671111111     0.32
+subset {345}: 153090 of 153090 (orientation, position) pairs reached, max distance 9
+variant        target_bytes target_bytes4   states    max_exp    max_cand     mean_cand  worst_state     seconds
+os{345}              193374        114309     2644      22170      133008       16384.7  16345271111111     0.26
+subset {346}: 153090 of 153090 (orientation, position) pairs reached, max distance 9
+variant        target_bytes target_bytes4   states    max_exp    max_cand     mean_cand  worst_state     seconds
+os{346}              193374        114309     2644      27896      167361       19028.5  14325671111111     0.31
+subset {347}: 153090 of 153090 (orientation, position) pairs reached, max distance 9
+variant        target_bytes target_bytes4   states    max_exp    max_cand     mean_cand  worst_state     seconds
+os{347}              193374        114309     2644      28500      170985       18713.7  14325671111111     0.32
+subset {356}: 153090 of 153090 (orientation, position) pairs reached, max distance 9
+variant        target_bytes target_bytes4   states    max_exp    max_cand     mean_cand  worst_state     seconds
+os{356}              193374        114309     2644      28457      170727       18662.0  14325671111111     0.32
+subset {357}: 153090 of 153090 (orientation, position) pairs reached, max distance 9
+variant        target_bytes target_bytes4   states    max_exp    max_cand     mean_cand  worst_state     seconds
+os{357}              193374        114309     2644      28450      170685       19074.4  14325671111111     0.31
+subset {367}: 153090 of 153090 (orientation, position) pairs reached, max distance 9
+variant        target_bytes target_bytes4   states    max_exp    max_cand     mean_cand  worst_state     seconds
+os{367}              193374        114309     2644      33777      202647       14745.3  14325671111111     0.23
+subset {456}: 153090 of 153090 (orientation, position) pairs reached, max distance 9
+variant        target_bytes target_bytes4   states    max_exp    max_cand     mean_cand  worst_state     seconds
+os{456}              193374        114309     2644      28168      168990       18966.0  54721631111111     0.30
+subset {457}: 153090 of 153090 (orientation, position) pairs reached, max distance 9
+variant        target_bytes target_bytes4   states    max_exp    max_cand     mean_cand  worst_state     seconds
+os{457}              193374        114309     2644      20053      120306       18554.3  16345271111111     0.30
+subset {467}: 153090 of 153090 (orientation, position) pairs reached, max distance 9
+variant        target_bytes target_bytes4   states    max_exp    max_cand     mean_cand  worst_state     seconds
+os{467}              193374        114309     2644      28081      168471       18783.7  14325671111111     0.31
+subset {567}: 153090 of 153090 (orientation, position) pairs reached, max distance 9
+variant        target_bytes target_bytes4   states    max_exp    max_cand     mean_cand  worst_state     seconds
+os{567}              193374        114309     2644      28709      172239       17678.1  14325671111111     0.28

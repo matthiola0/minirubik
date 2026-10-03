@@ -28,6 +28,9 @@ solver_ida: solver_ida.c
 check-ida: solver_ida
 	./solver_ida --self-test
 
+bench/ida_bench: bench/ida_bench.c solver_ida.c
+	$(CC) $(CFLAGS) $< -o $@
+
 check: solver mini $(VECTORS)
 	./solver --self-test
 	@expected=$$(mktemp); actual=$$(mktemp); \
@@ -100,4 +103,4 @@ endif
 	$(CLANG_FORMAT) -i $(C_SOURCES)
 
 clean:
-	$(RM) solver mini solver_ida
+	$(RM) solver mini solver_ida bench/ida_bench
