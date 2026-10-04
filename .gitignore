@@ -8,3 +8,4 @@ solver_ida
 bench/ida_bench
 bench/c_efficiency
 rv32/build/
+__pycache__/

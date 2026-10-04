@@ -1,0 +1,13 @@
+Linked ELF section sizes, renderer disabled, GNU as/ld --no-relax:
+variant                 .text   .data+.bss+.rodata
+eager.s                  1200   40947
+short-circuit.s          1196   40947
+solver.s                 1184   40859
+solver_ref.elf           1272   40600
+GUI solver               1460   41003
+Static limit: 131072 bytes.
+The section headers, not the ELF file length or object size, determine these counts.
+GUI GNU check supplies LED_MATRIX_0_BASE=0xf0000000, WIDTH=35, HEIGHT=25
+as assembler symbols solely for section measurement. Ripes supplies the
+actual peripheral symbols when loading the GUI source. ISA attribute rv32i2p1;
+no undefined symbols. Renderer-off .text is the comparison metric above.

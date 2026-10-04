@@ -1,0 +1,14 @@
+Measurements and screenshots: 2026-10-04, Windows, Asia/Taipei.
+Ripes GUI Help > Version: v2.2.6-106-g5b8a616
+Ripes.exe SHA256: BD2DDEA8CD6FCF6902CDA7366FE99AB6DD0C7FDBBC7EFCFDB89EDE20ACC67F0F
+Ripes executable: set RIPES or pass --ripes to rv32.py.
+Host GCC: gcc.exe (Rev5, Built by MSYS2 project) 16.1.0
+Target GCC: riscv64-unknown-elf-gcc.exe (GCC) 15.1.0
+Target flags: -O2 -march=rv32i -mabi=ilp32 -std=c99 -Wall -Wextra -Wpedantic -ffreestanding -nostdlib -nostartfiles -Wl,--no-relax
+Reference ELF attribute: rv32i2p1, 16-byte stack alignment.
+Reference nm -u: no undefined symbols; no libgcc is linked.
+Models: RV32_ISS for instruction budget; RV32_5S for T7 and GUI walkthrough.
+ISA extensions: none. Renderer off in every measurement CSV.
+Full C host verification ran concurrently with Ripes suites: 273.5930261 wall seconds.
+No timing comparison with the idle Stage 3 host run is inferred from this duration.
+GUI animation: actual path replay; 35 x 25 LED matrix; display pixel size 16.

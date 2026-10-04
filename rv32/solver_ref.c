@@ -3,7 +3,7 @@
  *
  * rv32/rv32.py build compiles it with
  *   riscv64-unknown-elf-gcc -O2 -march=rv32i -mabi=ilp32 -ffreestanding
- *     -nostdlib -nostartfiles -Wl,--no-relax -Ibuild solver_ref.c -lgcc
+ *     -nostdlib -nostartfiles -Wl,--no-relax -Ibuild solver_ref.c
  * and rv32.py run replaces the 14 characters of `input` in the ELF.
  *
  * Output: the moves separated by spaces, then a newline, through Ripes

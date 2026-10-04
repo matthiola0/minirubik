@@ -1,0 +1,7 @@
+cycle,retired,target_pc,stage,observation
+563,434,0x1f0,IF,instruction 0x0002da83 fetched
+564,435,0x1f0,ID,LHU x21 from x5 with immediate 0
+565,436,0x1f0,EX,forwarded x5=0x100008fe plus 0
+566,437,0x1f0,MEM,unsigned halfword read returns 0x756
+567,438,0x1f0,WB,MEMREAD selected and register write enabled for x21
+568,439,0x1f0,committed,x21=s5=0x00000756 visible in register table
