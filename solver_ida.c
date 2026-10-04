@@ -258,52 +258,112 @@ typedef struct {
     unsigned length;
 } solution_t;
 
-static frame_t new_frame(uint16_t p, uint16_t o, uint8_t previous_face)
-{
-    frame_t frame = {p, o, p, o, 0, 0, previous_face};
-    return frame;
-}
+/* The benchmark supplies counters; ordinary builds contain none. */
+#ifndef IDA_COUNT
+#define IDA_COUNT(event) ((void) 0)
+#endif
+/* 0: eager max, 1: permutation first, 2: orientation first. */
+#ifndef IDA_HEURISTIC_ORDER
+#define IDA_HEURISTIC_ORDER 1
+#endif
 
 /* Fixed stack, no recursion, allocator, rank/unrank or division in search. */
 static int solve(uint16_t p, uint16_t o, solution_t *solution)
 {
     frame_t stack[MAX_DEPTH + 1];
-    memset(solution, 0, sizeof *solution);
+    solution->length = 0;
+    if ((p | o) == 0)
+        return 1;
     for (unsigned bound = heuristic(p, o); bound <= MAX_DEPTH; ++bound) {
         unsigned depth = 0;
-        stack[0] = new_frame(p, o, 3);
-        if (p == 0 && o == 0)
-            return 1;
-        for (;;) {
-            frame_t *frame = &stack[depth];
-            if (frame->face == 3) {
-                if (depth == 0)
-                    break;
-                --depth;
-                continue;
-            }
-            if (frame->face == frame->previous_face || frame->turn == 3) {
-                ++frame->face;
-                frame->turn = 0;
-                frame->next_p = frame->p;
-                frame->next_o = frame->o;
-                continue;
-            }
-            uint8_t face = frame->face;
-            frame->next_p = permutation[face][frame->next_p];
-            frame->next_o = orientation[face][frame->next_o];
-            uint8_t move = (uint8_t) (face * 3U + frame->turn++);
-            uint16_t next_p = frame->next_p, next_o = frame->next_o;
-            if (depth + 1 + heuristic(next_p, next_o) > bound)
-                continue;
-            solution->moves[depth] = move;
-            if (next_p == 0 && next_o == 0) {
-                solution->length = depth + 1;
-                return 1;
-            }
-            ++depth;
-            stack[depth] = new_frame(next_p, next_o, face);
+        unsigned remaining = bound - 1;
+        uint16_t here_p = p, here_o = o, next_p, next_o;
+        /* Root sentinel must differ from the end-of-faces value 3. */
+        unsigned face = 0, turn, previous_face = UINT8_MAX;
+        const uint16_t *p_row, *o_row;
+        IDA_COUNT(iterations);
+        IDA_COUNT(expanded);
+
+    next_face:
+        /* Test once per face, rather than once per candidate. */
+        if (face == previous_face)
+            ++face;
+        if (face == 3)
+            goto backtrack;
+        p_row = permutation[face];
+        o_row = orientation[face];
+        IDA_COUNT(face_starts);
+        next_p = here_p;
+        next_o = here_o;
+        turn = 0;
+
+    next_turn:
+        if (turn == 3) {
+            ++face;
+            goto next_face;
         }
+        next_p = p_row[next_p];
+        next_o = o_row[next_o];
+        ++turn;
+        IDA_COUNT(candidates);
+        /* Both transitions must happen even on a rejected candidate:
+         * the next turn continues from these coordinates. */
+#if IDA_HEURISTIC_ORDER == 0
+        IDA_COUNT(p_reads);
+        IDA_COUNT(o_reads);
+        if (heuristic(next_p, next_o) > remaining)
+            goto next_turn;
+#elif IDA_HEURISTIC_ORDER == 2
+        IDA_COUNT(o_reads);
+        if (orientation_distance[next_o] > remaining)
+            goto next_turn;
+        IDA_COUNT(p_reads);
+        if (permutation_distance[next_p] > remaining)
+            goto next_turn;
+#else
+        IDA_COUNT(p_reads);
+        if (permutation_distance[next_p] > remaining)
+            goto next_turn;
+        IDA_COUNT(o_reads);
+        if (orientation_distance[next_o] > remaining)
+            goto next_turn;
+#endif
+        solution->moves[depth] = (uint8_t) (face * 3U + turn - 1U);
+        if ((next_p | next_o) == 0) {
+            solution->length = depth + 1;
+            return 1;
+        }
+        /* Keep rejected candidates in locals; save only before descent. */
+        stack[depth] = (frame_t) {here_p, here_o, next_p, next_o,
+                                 (uint8_t) face, (uint8_t) turn,
+                                 (uint8_t) previous_face};
+        IDA_COUNT(saves);
+        ++depth;
+        --remaining;
+        here_p = next_p;
+        here_o = next_o;
+        previous_face = face;
+        face = 0;
+        IDA_COUNT(expanded);
+        goto next_face;
+
+    backtrack:
+        if (depth == 0)
+            continue;
+        --depth;
+        ++remaining;
+        frame_t *frame = &stack[depth];
+        here_p = frame->p;
+        here_o = frame->o;
+        next_p = frame->next_p;
+        next_o = frame->next_o;
+        face = frame->face;
+        turn = frame->turn;
+        previous_face = frame->previous_face;
+        p_row = permutation[face];
+        o_row = orientation[face];
+        IDA_COUNT(restores);
+        goto next_turn;
     }
     return 0;
 }
