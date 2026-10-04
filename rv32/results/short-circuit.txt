@@ -1,0 +1,7 @@
+short-circuit.s on RV32_ISS: 4 of 4 states passed
+  54721631111111  exit 0  iret 16703921  B2 R' B R' D' B R2 B R B D'
+  12345671111111  exit 0  iret 461  
+  23615472113321  exit 0  iret 2272  D' R'
+  21345671111111  exit 0  iret 6112472  R B' D2 R' B R' B' R D2 R B
+retired instructions: max 16703921 at 54721631111111, mean 5704781.5, min 461
+21345671111111: 6112472

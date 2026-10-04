@@ -1,0 +1,3 @@
+solver.s on RV32_ISS: 62 of 62 states passed
+retired instructions: max 15104505 at 54721631111111, mean 524398.8, min 14
+21345671111111: 5527622

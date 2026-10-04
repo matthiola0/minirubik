@@ -1,0 +1,16 @@
+200/2644 states
+400/2644 states
+600/2644 states
+800/2644 states
+1000/2644 states
+1200/2644 states
+1400/2644 states
+1600/2644 states
+1800/2644 states
+2000/2644 states
+2200/2644 states
+2400/2644 states
+2600/2644 states
+solver.s on RV32_ISS: 2644 of 2644 states passed
+retired instructions: max 15104505 at 54721631111111, mean 4895289.3, min 3338259
+21345671111111: 5527622

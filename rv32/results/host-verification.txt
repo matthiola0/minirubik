@@ -1,0 +1,10 @@
+H2: generated tables match every host entry; solved=0; maxima P=7 O=6
+500000/3674160 states
+1000000/3674160 states
+1500000/3674160 states
+2000000/3674160 states
+2500000/3674160 states
+3000000/3674160 states
+3500000/3674160 states
+PASS: parse/rank, H1 and H3, all 3674160 states; diameter 11; H4 N/A (byte distances)
+wall_seconds=273.5930261 exit=0

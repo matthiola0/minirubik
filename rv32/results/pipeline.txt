@@ -1,0 +1,6 @@
+solver.s on RV32_5S: 3 of 3 states passed
+  12345671111111  exit 0  iret 461  
+  23615472113321  exit 0  iret 2255  D' R'
+  21345671111111  exit 0  iret 5527622  R B' D2 R' B R' B' R D2 R B
+retired instructions: max 5527622 at 21345671111111, mean 1843446.0, min 461
+21345671111111: 5527622

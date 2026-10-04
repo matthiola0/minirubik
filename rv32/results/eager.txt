@@ -1,0 +1,7 @@
+eager.s on RV32_ISS: 4 of 4 states passed
+  54721631111111  exit 0  iret 18182519  B2 R' B R' D' B R2 B R B D'
+  12345671111111  exit 0  iret 461  
+  23615472113321  exit 0  iret 2302  D' R'
+  21345671111111  exit 0  iret 6653547  R B' D2 R' B R' B' R D2 R B
+retired instructions: max 18182519 at 54721631111111, mean 6209707.2, min 461
+21345671111111: 6653547

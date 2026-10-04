@@ -1,0 +1,5 @@
+state,expected_exit,expected_length,exit,length,iret,status,moves
+54721631111111,0,11,0,11,16703921,ok,B2 R' B R' D' B R2 B R B D'
+12345671111111,0,0,0,0,461,ok,
+23615472113321,0,2,0,2,2272,ok,D' R'
+21345671111111,0,11,0,11,6112472,ok,R B' D2 R' B R' B' R D2 R B
