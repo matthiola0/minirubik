@@ -1,0 +1,1 @@
+PASS: 9 one-move cases, 8 upstream vectors, 11 invalid CLI cases; paths replayed in an independent Python model

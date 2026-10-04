@@ -1,0 +1,2 @@
+3674160 states; diameter 11
+wall_seconds=208.910 exit=0

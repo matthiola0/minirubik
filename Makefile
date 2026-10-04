@@ -31,6 +31,9 @@ check-ida: solver_ida
 bench/ida_bench: bench/ida_bench.c solver_ida.c
 	$(CC) $(CFLAGS) $< -o $@
 
+bench/c_efficiency: bench/c_efficiency.c bench/search_baseline.h solver_ida.c
+	$(CC) $(CFLAGS) $< -o $@
+
 check: solver mini $(VECTORS)
 	./solver --self-test
 	@expected=$$(mktemp); actual=$$(mktemp); \
@@ -103,4 +106,4 @@ endif
 	$(CLANG_FORMAT) -i $(C_SOURCES)
 
 clean:
-	$(RM) solver mini solver_ida bench/ida_bench
+	$(RM) solver mini solver_ida bench/ida_bench bench/c_efficiency
